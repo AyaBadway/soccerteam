@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/soccerteam/db" VERSION="2025061301" COMMENT="Soccer Team plugin table">
+  <TABLES>
+    <TABLE NAME="local_soccerteam_data" COMMENT="Stores soccer team info">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true"/>
+        <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="true"/>
+        <FIELD NAME="playerid" TYPE="int" LENGTH="10" NOTNULL="true"/>
+        <FIELD NAME="position" TYPE="char" LENGTH="100" NOTNULL="true"/>
+        <FIELD NAME="jerseynumber" TYPE="int" LENGTH="2" NOTNULL="true"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true"/>
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>
